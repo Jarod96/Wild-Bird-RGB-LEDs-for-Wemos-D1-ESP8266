@@ -126,9 +126,7 @@ void setup() {
 
 void loop() {
 
-  // changing the LED brightness with PWM
-
-  for (int i = 0; i <= 3; i++) {
+   for (int i = 0; i <= 3; i++) {
 
     if (Tilt.motion) {
       (i = 0);
@@ -158,7 +156,7 @@ void loop() {
     }
 
     if (i < 3) {
-
+        // changing the LED brightness with PWM
       for (int dutyCycle = 255; dutyCycle >= 0; dutyCycle--) {
         analogWrite(LEDRV, dutyCycle);
         delay(1);
