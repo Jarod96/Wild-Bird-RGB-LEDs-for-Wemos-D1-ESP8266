@@ -1,8 +1,9 @@
 # Wild-Bird-RGB-LEDs-for-Wemos-D1-ESP8266
 Wild-Bird RGB LED idea is to be attached to a drone or bike for entertainment purposes.
-Uses Tilt sensor to reset the cycle and extend delay before going to deep-sleep mode.
-If in deep-sleep mode due to the cycle being finished, another tilt sensor is used to wake-up from deep-sleep.
-Tilt sensor do not wake-up the module if battery is low.
+Uses 2 Tilt sensors to reset the module or the cycle and extend delay before going to deep-sleep mode.
+First Tilt sensor is connected between D6 (GPIO12) and GND with a Pull-up resistor of 10KOhm.
+Second Tilt sensor is bridged between RST and D0 (GPIO16) which keep it in sleep-mode until the device is in motion. 
+(Tilt sensor do not wake-up the module if battery is low)
 
 
 ![Image](https://user-images.githubusercontent.com/131245523/236570260-f4b95e72-514d-4d54-829c-df9f27f373b4.jpg)
